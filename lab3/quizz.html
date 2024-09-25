@@ -17,9 +17,44 @@
 		</nav>
 	</header>
 	<main>
-		<h2>Home</h2>
-		<p>A minha cidade é muito linda!!!</p>
-		<img src="images/sintra-portugal.jpg">
+		<h2>Quizz</h2>
+		<p>Responda a algumas perguntas sobre Sintra!</p>
+
+		<form action="" method="get">
+			<h3>Dados do utilizador</h3>
+			<input type="text" name="nome" id="nome">
+			<label for="nome">Nome: </label>
+			<input type="text" name="apelido" id="apelido">
+			<label for="apelido">Apelido: </label>
+			<input type="email" name="email" id="email">
+			<label for="email">Email: </label>
+		<br>
+		<h3>Quizz</h3>
+			<label for="pergunta_1">Qual é o nome do famoso palácio colorido, 
+				localizado no topo da Serra de Sintra?</label>
+			<select name="pergunta_1" id="pergunta_1">
+				<option value="">--- Escolha uma opção ---</option>
+				<option value="palacio-de-monserrate">Palácio de Monserrate</option>
+				<option value="palacio-da-pena">Palácio da Pena</option>
+				<option value="quinta-da-regaleira">Quinta da Regaleira</option>
+				<option value="palacio-nacional-de-sintra">Palácio Nacional de Sintra</option>
+			</select>
+			<br>
+
+			<label for="pergunta_2">A cidade de Sintra foi classificada 
+				como Patrimônio Mundial da UNESCO em qual categoria?</label>
+			
+			<datalist id="pergunta_2">
+				<option value="patrimonio-cultural">Patrimônio Cultural</option>
+				<option value="patrimonio-natural">Patrimônio Natural</option>
+				<option value="patrimonio-imaterial">Patrimônio Imaterial</option>
+				<option value="patrimonio-misto">Patrimônio Misto</option>
+			</datalist>
+				<br>
+			<button type="reset">reset</button> | <button type="submit">submit</button>
+		</form>
+
+
 	</main>
 	<footer>
 		<p>DIW 2024</p>
