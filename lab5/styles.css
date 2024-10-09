@@ -23,6 +23,11 @@ img {
 
 section {
     background-color: aliceblue;
+    display: flex;
+    margin: 20px;
+    padding: 5px 10px;
+    justify-content: center;
+    flex-direction: column;
 }
 
 nav a:hover {
@@ -41,4 +46,8 @@ input {
 label, input {
     display: block;
     margin-bottom: 10px;
+}
+
+table {
+    outline-color: blueviolet;
 }
