@@ -1,0 +1,44 @@
+body {
+    background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    background-color: limegreen;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+nav,footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+img {
+    padding: auto;
+}
+
+section {
+    background-color: aliceblue;
+}
+
+nav a:hover {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
