@@ -42,3 +42,8 @@ label, input {
     display: block;
     margin-bottom: 10px;
 }
+
+.poema-bloco {
+    display: block;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
