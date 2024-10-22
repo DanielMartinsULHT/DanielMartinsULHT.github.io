@@ -1,0 +1,65 @@
+body {
+    background-color: darkgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    background-color: limegreen;
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+nav,footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+img {
+    padding: auto;
+}
+
+section {
+    background-color: aliceblue;
+    display: flex;
+    margin: 20px;
+    padding: 5px 10px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav a:hover {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+table {
+     border-style: solid;
+}
+
+td, th {
+    border-style: solid;
+}
+
+tr:nth-child(even) {
+    background-color: cadetblue;
+}
+
+a:hover {
+    cursor:crosshair;
+}
