@@ -49,5 +49,13 @@ label, input {
 }
 
 table {
-    outline-color: blueviolet;
+     border-style: solid;
+}
+
+td, th {
+    border-style: solid;
+}
+
+tr:nth-child(even) {
+    background-color: cadetblue;
 }
