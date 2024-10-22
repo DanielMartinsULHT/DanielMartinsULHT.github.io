@@ -1,0 +1,96 @@
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box; /* medidas sao tomadas da borda */
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+    padding: 5px;
+}
+
+header a {
+    padding: 20px;
+    color: azure
+}
+
+header a:hover {
+    color: blue;
+}
+
+#poema {
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+#poema p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#poema p:nth-last-child(1) {
+    font-weight: bold;
+    font-style: italic;
+}
+
+header a:nth-last-child(1){
+    background-color:dimgrey
+}
+
+#paisagem {
+    position: relative;
+}
+
+#paisagem div img {
+    width: 100vw;
+}
+
+#paisagem div p {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color:lavender;
+
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+#cidades {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: cornsilk;
+}
+
+#cidades section{
+    margin: 10px 20px;
+}
+
+#cidades img, #cidades div {
+    border-radius: 2px;
+}
+
+#cidades div {
+    height: 100%;
+    background-color: azure;
+}
+
+#cidades div:hover {
+    background-color: beige;
+}
