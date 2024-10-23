@@ -1,8 +1,52 @@
 body {
-    background-color: #b3b3b3;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, footer, section {
+    border-radius: 5px;
+    text-align: center;
+    padding: 1vh 2vh;
+    margin: 1rem;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 10%;
+    display: flex;
+    flex-direction:row;
 }
+
+header, footer {
+    background-color: gray;
+
+}
+
+section {
+    background-color: whitesmoke;
+    
+}
+ul {
+    display:inline-block;
+}
+
+.bloco-central {
+    display: flex;
+    justify-content:stretch;
+}
+
+.laboratorios {
+    display: flex;
+    flex-direction: row;
+}
+
+.laboratorios div {
+    background-color:darkseagreen;
+    justify-content: space-around;
+    margin: 10px 5px; 
+}
+
+@media only screen and (max-width: 430px) {
+    .laboratorios {
+        flex-wrap: wrap;
+    }
+  }

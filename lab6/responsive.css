@@ -1,0 +1,19 @@
+/* Smartphones (Galaxy S23, iPhone 15, etc.) */
+@media only screen and (max-width: 400px) {
+    /* Estilos para smartphones pequenos */
+  }
+  
+  @media only screen and (max-width: 430px) {
+    /* Estilos específicos para iPhone 15 */
+  }
+  
+  /* Tablets (iPad) em modo retrato */
+  @media only screen and (min-width: 820px) and (max-width: 1024px) {
+    /* Estilos para iPads e tablets similares */
+  }
+  
+  /* Tablets em modo paisagem e desktops */
+  @media only screen and (min-width: 1024px) {
+    /* Estilos para tablets em paisagem e desktops */
+  }
+  
