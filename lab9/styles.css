@@ -1,0 +1,37 @@
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header, aside {
+    background-color: #D8DBBD;
+}
+
+main, footer {
+    background-color: #FAF6E3;
+}
+
+main section{
+    display: grid;
+    grid-template: ". . ."
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 auto;
+}
+
+article {
+    border-style: dashed;
+    border-color: brown;
+}
+
+img {
+    max-width: 20%;
+}
+
