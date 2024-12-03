@@ -5,6 +5,8 @@
 }
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png");
+    background-repeat:space;
 }
 
 header, aside {
@@ -33,5 +35,9 @@ article {
 
 img {
     max-width: 20%;
+}
+
+.produtos {
+    background-color: whitesmoke;
 }
 

@@ -28,6 +28,7 @@ function criarProduto() {
 function adicionarProdutoNaLista(produto) {
     const article = document.createElement("article");
     article.id = `produto-${produto.id}`;
+    article.className = `produtos`
     article.innerHTML = `
         <h3>${produto.title}</h3>
         <p>${produto.description}</p>
@@ -62,6 +63,7 @@ function adicionarAoCesto(produto, articleOriginal) {
 function adicionarProdutoNoCesto(produto) {
     const article = document.createElement("article");
     article.id = `cesto-${produto.id}`;
+    article.className = `produtos`
     article.innerHTML = `
         <h3>${produto.title}</h3>
         <p>${produto.description}</p>
