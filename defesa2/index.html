@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Loja</title>
+</head>
+<body>
+    <header>
+        <h1>Loja</h1>
+        <nav>
+            <a href="#">Produtos</a>
+            <a href="#">Cesto</a>
+        </nav>
+        <label for="select-ordenar">Ordenar por rating:</label>
+        <input type="button" value="Menos info" id="btn-menos-info">
+    </header>
+    <main>
+            <h2>Selecione os seus produtos</h2>
+            <!--articles aqui-->
+            <section id = "filtros-produtos">
+                
+            </section>
+
+            <section id="lista-produtos">
+                <!-- <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" srcset=""> -->
+            </section>
+
+            <input type="button" value="++ adicionar todos" id="btn-add-all">
+    </main>
+    <aside>
+        <h2>Produtos selecionados</h2>
+        <section id="lista-produtos-selecionados">
+
+        </section>
+        <h3>Custo total: <span id="preco-total">0.00</span> $</h3>
+        <label for="checkbox">És estudante do DEISI? </label><input type="checkbox" id="checkbox-deisi" value="checkbox">
+        <label for="desconto">Cupão de desconto</label><input type="text" id="text-deisi" value="">
+        <input type="button" value="Comprar" id="btn-buy">
+
+        <div id = "dados-pgto"></div>
+
+        <label for="nome">Adicionar o nome:</label><input type="text" value="nome" id="txt-add-name">
+
+
+    </aside>
+    <footer>2024</footer>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,48 @@
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png");
+    background-repeat:space;
+}
+
+header, aside {
+    background-color: #D8DBBD;
+}
+
+main, footer {
+    background-color: #FAF6E3;
+}
+
+main section{
+    display: grid;
+    grid-template: ". . ."
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 auto;
+}
+
+article {
+    border-style: dashed;
+    border-color: brown;
+}
+
+img {
+    max-width: 20%;
+}
+
+.produtos {
+    background-color: whitesmoke;
+}
+
+#checkbox-deisi {
+    border-color: yellow;
+    border-width: 30;
+}
+
