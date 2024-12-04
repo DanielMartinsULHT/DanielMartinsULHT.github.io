@@ -1,6 +1,13 @@
 const sectionProduto = document.getElementById('lista-produtos');
 const sectionProdutoSelecionados = document.getElementById('lista-produtos-selecionados');
 const precoTotalElement = document.getElementById('preco-total');
+const dadosPgto = document.getElementById('dados-pgto')
+
+const checkbox = document.getElementById('checkbox-deisi');
+const textbox = document.getElementById('text-deisi');
+const btnComprar = document.getElementById('btn-buy');
+
+btnComprar.addEventListener('click', comprar);
 
 let precoTotal = 0; // Inicializa o total como 0
 
@@ -127,6 +134,49 @@ function restaurarCarrinho() {
         adicionarProdutoNoCesto(produto);
         atualizarPrecoTotal(produto.price); // Calcula o total ao restaurar
     });
+}
+
+function comprar() {
+    const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    let data = {
+        products: [],
+        student: false,
+        coupon: "",
+        name: "Daniel"
+    };
+
+   /* if(checkbox.checked){
+        data.student = true;
+    }
+    if(textbox.value != null){
+        data.coupon = textbox.value;
+    }*/
+    carrinho.forEach(produto => {
+        data.products.push(produto.id);
+    })
+
+    //fetch
+    fetch('https://deisishop.pythonanywhere.com/buy/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+        })
+        .then(response => {
+            console.log(response);
+            if (response.ok) {
+                return response.json;
+            }})
+            .then(data => {
+                console.log(data);   
+            
+                // Access JSON data here
+                dadosPgto.innerHTML = `<p>Referência de pagamento: €${data.reference}</p>`;
+              })
+
+    console.log(data);
+
 }
 
 // Executa ao carregar o DOM

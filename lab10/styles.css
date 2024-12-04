@@ -41,3 +41,8 @@ img {
     background-color: whitesmoke;
 }
 
+#checkbox-deisi {
+    border-color: yellow;
+    border-width: 30;
+}
+
