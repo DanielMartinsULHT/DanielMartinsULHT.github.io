@@ -20,6 +20,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
+          node-version: 22
           # O 'path' deve ser onde está o seu package.json. 
           # Se estiver na raiz do repo, deixe como .
           path: . 
